@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{meta_description}}">
+  <title>{{meta_title}}</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<!-- HEADER (hardcoded) -->
+<header class="header" id="main-header">
+  <div class="header-inner">
+    <a href="#" class="logo" id="logo-link">
+      <div class="logo-icon">H</div>
+      <span class="logo-text">Hammernest</span>
+    </a>
+    <nav class="desktop-nav">
+      <button class="nav-link active" data-nav="Home">Home</button>
+      <button class="nav-link" data-nav="Shop">Shop</button>
+      <button class="nav-link" data-nav="Collections">Collections</button>
+      <button class="nav-link" data-nav="Contact">Contact</button>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+919800000000" class="header-call-btn" id="header-call-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call Us</a>
+      <button class="icon-btn mobile-toggle" id="mobile-toggle" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-inner">
+      <button class="mobile-nav-link active" data-nav="Home">Home</button>
+      <button class="mobile-nav-link" data-nav="Shop">Shop</button>
+      <button class="mobile-nav-link" data-nav="Collections">Collections</button>
+      <button class="mobile-nav-link" data-nav="Contact">Contact</button>
+      <div class="mobile-menu-divider">
+        <a href="https://wa.me/" class="mobile-contact-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg><span>WhatsApp Us</span></a>
+        <a href="tel:" class="mobile-contact-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Call Us</span></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ==================== HOME PAGE ==================== -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="{{hero_image}}" alt="{{hero_image_alt}}">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-tag">{{hero_tag}}</p>
+        <h1 class="hero-title">{{hero_title}}</h1>
+        <p class="hero-desc">{{hero_desc}}</p>
+        <div class="hero-btns">
+          <button class="btn-primary" data-goto-shop>Explore Collection <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+          <button class="btn-outline-white"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Talk to Us</button>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span>Scroll to Explore</span><div class="scroll-indicator-line"></div></div>
+  </section>
+
+  <!-- COLLECTIONS -->
+  <section class="section" style="background:var(--cream);">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">{{collections_tag}}</p>
+        <h2 class="section-title">{{collections_title}}</h2>
+      </div>
+      <div class="collections-grid">
+        {{COLLECTIONS_HTML}}
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAND STORY -->
+  <section class="brand-story">
+    <div style="max-width:1440px;margin:0 auto;">
+      <div class="brand-story-grid">
+        <div class="brand-story-img"><img src="{{brand_image}}" alt="{{brand_image_alt}}"></div>
+        <div class="brand-story-text">
+          <div class="inner">
+            <p class="section-tag">{{brand_tag}}</p>
+            <h2>{{brand_title}}</h2>
+            <p style="font-size:18px;">{{brand_text1}}</p>
+            <p>{{brand_text2}}</p>
+            <button class="btn-outline-amber">Our Story <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BESTSELLERS -->
+  <section class="section" style="background:var(--cream);">
+    <div class="container">
+      <div class="products-header">
+        <div><p class="section-tag">{{bestsellers_tag}}</p><h2 class="section-title">{{bestsellers_title}}</h2></div>
+        <button class="view-all-link" data-goto-shop>View All Products <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+      </div>
+      <div class="products-grid" id="home-products-grid">
+        {{HOME_PRODUCTS_HTML}}
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE BANNER -->
+  <section class="quote-banner">
+    <div class="bg">
+      <img src="{{quote_image}}" alt="{{quote_image_alt}}">
+      <div class="bg-overlay"></div>
+    </div>
+    <div class="container content">
+      <div class="stars"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" class="star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+      <blockquote>"{{quote_text}}"</blockquote>
+      <p class="quote-author">{{quote_author}}</p>
+      <p class="quote-meta">{{quote_meta}}</p>
+    </div>
+  </section>
+
+  <!-- WHY HAMMERNEST -->
+  <section class="section" style="background:var(--cream);">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">{{features_tag}}</p>
+        <h2 class="section-title">{{features_title}}</h2>
+      </div>
+      <div class="features-grid">
+        {{FEATURES_HTML}}
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <p class="tag">{{cta_tag}}</p>
+      <h2>{{cta_title}}</h2>
+      <p class="desc">{{cta_desc}}</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/" class="btn-wa"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> WhatsApp Us</a>
+        <a href="tel:+91" class="btn-call"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call Now</a>
+        <button class="btn-outline-cream" data-goto-contact><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> Send a Message</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section class="section" style="background:var(--cream);padding-top:64px;padding-bottom:80px;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom:40px;"><p class="section-tag">{{instagram_tag}}</p><h2 class="section-title" style="font-size:24px;">{{instagram_title}}</h2></div>
+      <div class="insta-grid" id="insta-grid">
+        {{INSTAGRAM_HTML}}
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ==================== SHOP PAGE ==================== -->
+<div id="page-shop" class="page">
+  <div class="shop-page">
+    <div class="shop-hero"><div class="container">
+      <div class="breadcrumb"><button id="breadcrumb-home">Home</button><span>/</span><span class="current">Shop All</span></div>
+      <h1 class="shop-title">{{shop_title}}</h1>
+      <p class="shop-desc">{{shop_desc}}</p>
+    </div></div>
+    <div class="category-tabs"><div class="container"><div class="category-tabs-inner">
+      <button class="cat-tab active" data-category="All">All</button>
+      <button class="cat-tab" data-category="Living Room">Living Room</button>
+      <button class="cat-tab" data-category="Bedroom">Bedroom</button>
+      <button class="cat-tab" data-category="Dining">Dining</button>
+    </div></div></div>
+    <div class="container">
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <button class="filter-toggle-btn" id="mobile-filter-toggle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="21" x2="14" y1="4" y2="4"/><line x1="10" x2="3" y1="4" y2="4"/><line x1="21" x2="12" y1="12" y2="12"/><line x1="8" x2="3" y1="12" y2="12"/><line x1="21" x2="16" y1="20" y2="20"/><line x1="12" x2="3" y1="20" y2="20"/><line x1="14" x2="14" y1="2" y2="6"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="16" x2="16" y1="18" y2="22"/></svg> Filters <span class="filter-badge" id="filter-badge" style="display:none;">0</span></button>
+          <p class="product-count" id="product-count"><strong>12</strong> products</p>
+        </div>
+        <div class="toolbar-right">
+          <button class="clear-filters-btn clear-all-trigger" id="clear-filters-toolbar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg> Clear all</button>
+          <div class="sort-select-wrap">
+            <select class="sort-select" id="sort-select">
+              <option value="featured">Sort: Featured</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="name">Name: A to Z</option>
+            </select>
+            <svg class="sort-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="shop-layout">
+        <!-- Desktop Sidebar (hardcoded filter UI) -->
+        <aside class="sidebar"><div class="sidebar-sticky">
+          <div class="filter-group"><h4>Material</h4>
+            <label class="filter-check material-check" data-material="Teak"><div class="checkbox"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Teak</span><span class="filter-count">(4)</span></label>
+            <label class="filter-check material-check" data-material="Oak"><div class="checkbox"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Oak</span><span class="filter-count">(4)</span></label>
+            <label class="filter-check material-check" data-material="Sheesham"><div class="checkbox"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Sheesham</span><span class="filter-count">(4)</span></label>
+          </div>
+          <div class="filter-group"><h4>Style</h4>
+            <label class="filter-check style-check" data-style="Modern"><div class="checkbox"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Modern</span></label>
+            <label class="filter-check style-check" data-style="Classic"><div class="checkbox"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Classic</span></label>
+            <label class="filter-check style-check" data-style="Contemporary"><div class="checkbox"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Contemporary</span></label>
+            <label class="filter-check style-check" data-style="Scandinavian"><div class="checkbox"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Scandinavian</span></label>
+          </div>
+          <div class="filter-group"><h4>Price Range</h4>
+            <button class="price-btn" data-index="0">Under ₹50,000</button>
+            <button class="price-btn" data-index="1">₹50,000 – ₹1,00,000</button>
+            <button class="price-btn" data-index="2">Above ₹1,00,000</button>
+          </div>
+          <button class="clear-all-sidebar sidebar-clear clear-all-trigger" style="display:none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg> Clear all filters</button>
+        </div></aside>
+
+        <!-- Mobile Filters (hardcoded filter UI) -->
+        <div class="mobile-filters-overlay" id="mobile-filters-overlay">
+          <div class="mobile-filters-panel">
+            <div class="mobile-filters-header"><h3>Filters</h3><button id="close-mobile-filters"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button></div>
+            <div class="mobile-filters-body">
+              <div class="filter-group"><h4>Material</h4>
+                <label class="filter-check material-check" data-material="Teak"><div class="checkbox"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Teak</span></label>
+                <label class="filter-check material-check" data-material="Oak"><div class="checkbox"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Oak</span></label>
+                <label class="filter-check material-check" data-material="Sheesham"><div class="checkbox"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Sheesham</span></label>
+              </div>
+              <div class="filter-group"><h4>Style</h4>
+                <label class="filter-check style-check" data-style="Modern"><div class="checkbox"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Modern</span></label>
+                <label class="filter-check style-check" data-style="Classic"><div class="checkbox"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Classic</span></label>
+                <label class="filter-check style-check" data-style="Contemporary"><div class="checkbox"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Contemporary</span></label>
+                <label class="filter-check style-check" data-style="Scandinavian"><div class="checkbox"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Scandinavian</span></label>
+              </div>
+              <div class="filter-group"><h4>Price Range</h4>
+                <button class="price-btn" data-index="0">Under ₹50,000</button>
+                <button class="price-btn" data-index="1">₹50,000 – ₹1,00,000</button>
+                <button class="price-btn" data-index="2">Above ₹1,00,000</button>
+              </div>
+            </div>
+            <div class="mobile-filters-footer">
+              <button class="btn-clear-mobile clear-all-trigger">Clear All</button>
+              <button class="btn-show-results" id="show-results-btn">Show Results</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-grid"><div class="shop-products-grid" id="shop-products-grid"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== CONTACT PAGE ==================== -->
+<div id="page-contact" class="page">
+  <div class="contact-page">
+    <div class="contact-hero">
+      <div class="bg"><img src="{{contact_hero_image}}" alt="Hammernest workshop"><div class="bg-overlay"></div></div>
+      <div class="container content">
+        <p class="section-tag" style="color:var(--gold);">{{contact_tag}}</p>
+        <h1>{{contact_title}}</h1>
+        <p class="desc">{{contact_desc}}</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="contact-cards">
+        <a href="https://wa.me/919800000000?text=Hi%20Hammernest%2C%20I'm%20interested%20in%20your%20furniture" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-card-icon wa"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+          <h3>WhatsApp</h3><p>Fastest way to reach us. Chat live with our design team.</p>
+          <span class="link green">Start Chat <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </a>
+        <a href="tel:+919800000000" class="contact-card">
+          <div class="contact-card-icon phone"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <h3>Call Us</h3><p>Speak directly with our team. Mon–Sat, 10am – 7pm IST.</p>
+          <span class="link amber">+91 98000 00000 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </a>
+        <div class="contact-card">
+          <div class="contact-card-icon map"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <h3>Visit Workshop</h3><p>See our craft up close. Walk-ins welcome during business hours.</p>
+          <span class="address">Workshop 14, Timber Lane<br>Jodhpur, Rajasthan 342001</span>
+        </div>
+      </div>
+      <div class="contact-layout">
+        <div class="form-card">
+          <div id="form-area">
+            <h2>Send Us a Message</h2>
+            <p class="sub">Fill out the form below and we'll get back to you within 24 hours.</p>
+            <form id="contact-form">
+              <div class="form-row">
+                <div class="form-group"><label class="form-label">Full Name *</label><input type="text" class="form-input" placeholder="e.g. Priya Sharma" required></div>
+                <div class="form-group"><label class="form-label">Email Address *</label><input type="email" class="form-input" placeholder="priya@example.com" required></div>
+              </div>
+              <div class="form-row">
+                <div class="form-group"><label class="form-label">Phone Number</label><input type="tel" class="form-input" placeholder="+91 98000 00000"></div>
+                <div class="form-group"><label class="form-label">Subject</label><div class="select-wrap"><select class="form-select"><option value="general">General Enquiry</option><option value="custom">Custom Furniture Order</option><option value="quote">Request a Quote</option><option value="support">After-Sale Support</option><option value="visit">Schedule a Workshop Visit</option></select><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div></div>
+              </div>
+              <div class="form-group full" style="margin-bottom:24px;"><label class="form-label">Your Message *</label><textarea class="form-textarea" placeholder="Tell us about what you're looking for — dimensions, materials, style preferences, or any questions you have..." required></textarea></div>
+              <button type="submit" class="btn-submit"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="m22 2-11 11"/></svg> Send Message</button>
+            </form>
+          </div>
+          <div id="thank-you" class="thank-you" style="display:none;">
+            <div class="check-circle"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. Our team will get back to you within 24 hours.</p>
+            <button class="btn-amber-sm" id="send-another" style="padding:14px 32px;font-size:15px;">Send Another Message</button>
+          </div>
+        </div>
+        <div>
+          <div class="sidebar-widget"><h3>Business Hours</h3>
+            <div class="hours-row"><span class="day">Monday – Friday</span><span class="time">10:00 AM – 7:00 PM</span></div>
+            <div class="hours-row"><span class="day">Saturday</span><span class="time">10:00 AM – 5:00 PM</span></div>
+            <div class="hours-row"><span class="day">Sunday</span><span class="time closed">Closed</span></div>
+          </div>
+          <div class="sidebar-widget"><h3>Connect With Us</h3><p style="color:var(--brown-mid);font-size:14px;margin-bottom:20px;">DM us on any platform — we're active and responsive.</p>
+            <a href="#" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg><div class="social-info"><p>Instagram</p><span>@hammernest</span></div><svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+            <a href="#" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg><div class="social-info"><p>Facebook</p><span>Hammernest Furniture</span></div><svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+            <a href="#" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg><div class="social-info"><p>YouTube</p><span>Hammernest</span></div><svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+            <a href="#" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg><div class="social-info"><p>Twitter / X</p><span>@hammernest</span></div><svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          </div>
+          <a href="https://wa.me/919800000000?text=Hi%20Hammernest%2C%20I'm%20interested%20in%20your%20furniture" target="_blank" rel="noopener noreferrer" class="wa-cta-block">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin:0 auto 12px;display:block;"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+            <p class="title">Prefer to Chat?</p>
+            <p class="sub">Tap to start a WhatsApp conversation — usually reply within minutes.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="workshop-section"><div class="container"><div class="workshop-grid">
+      <div>
+        <p class="section-tag">{{workshop_tag}}</p>
+        <h2>{{workshop_title}}</h2>
+        <p class="desc">{{workshop_desc}}</p>
+        <div style="margin-bottom:24px;">
+          <div class="workshop-detail"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>{{workshop_address}}</span></div>
+          <div class="workshop-detail"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>{{workshop_hours}}</span></div>
+        </div>
+        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn-dark"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Get Directions</a>
+      </div>
+      <div class="workshop-img"><img src="{{workshop_image}}" alt="{{workshop_image_alt}}"></div>
+    </div></div></div>
+  </div>
+</div>
+
+<!-- FOOTER (hardcoded) -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><div class="logo-icon" style="width:36px;height:36px;font-size:16px;">H</div><span class="logo-text" style="font-size:20px;">Hammernest</span></div>
+        <p>Custom-crafted furniture built with love, solid wood, and a commitment to lasting quality. Your home, our craft.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+          <a href="#" class="footer-social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" class="footer-social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Quick Links</h4><ul><li><a href="#">Shop All</a></li><li><a href="#">Living Room</a></li><li><a href="#">Bedroom</a></li><li><a href="#">Dining</a></li><li><a href="#">Custom Orders</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="#">Our Story</a></li><li><a href="#">Craftsmanship</a></li><li><a href="#">Sustainability</a></li><li><a href="#">Testimonials</a></li><li><a href="#">Contact Us</a></li></ul></div>
+      <div><h4>Get in Touch</h4>
+        <div class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>Workshop 14, Timber Lane, Jodhpur, Rajasthan 342001</span></div>
+        <div class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+91">+91 98XXX XXXXX</a></div>
+        <div class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:hello@hammernest.in">hello@hammernest.in</a></div>
+        <div class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Mon–Sat: 10am – 7pm</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Hammernest. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Shipping &amp; Returns</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- Product data injected at build time for shop filtering -->
+<script>
+const allProducts = {{ALL_PRODUCTS_JSON}};
+</script>
+<script src="script.js"></script>
+
+<!-- FLOATING BUTTONS (hardcoded) -->
+<div class="floating-buttons">
+  <a href="tel:+919800000000" class="floating-btn floating-call" aria-label="Call Us">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+  <a href="https://wa.me/919800000000?text=Hi%20Hammernest%2C%20I'm%20interested%20in%20your%20furniture" target="_blank" rel="noopener noreferrer" class="floating-btn floating-wa" aria-label="WhatsApp Us">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+  </a>
+</div>
+
+</body>
+</html>

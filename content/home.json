@@ -1,0 +1,130 @@
+{
+  "meta_title": "Hammernest | Handcrafted Furniture",
+  "meta_description": "Hammernest - Custom-crafted furniture built with solid wood, premium fabrics, and generations of artisan expertise.",
+
+  "hero_tag": "Handcrafted with Love",
+  "hero_title": "Crafted for the Moments That Matter",
+  "hero_desc": "Custom-designed furniture built with solid wood, premium fabrics, and generations of artisan expertise. Your home deserves a story.",
+  "hero_image": "https://images.unsplash.com/photo-1635104159939-4b2545da6981?ixid=M3w4NDcxNjh8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBsaXZpbmclMjByb29tJTIwd2FybSUyMHdvb2QlMjBtb2Rlcm4lMjBmdXJuaXR1cmUlMjBmYW1pbHl8ZW58MHx8fHwxNzc0ODg3NTIwfDA&ixlib=rb-4.1.0&w=1440&h=900&fit=crop",
+  "hero_image_alt": "Luxury handcrafted living room by Hammernest",
+
+  "collections_tag": "Curated Spaces",
+  "collections_title": "Explore Our Collections",
+  "collections": [
+    {
+      "name": "Living Room",
+      "tagline": "Where stories unfold",
+      "image": "https://images.unsplash.com/photo-1758448511421-debb41f3e621?ixid=M3w4NDcxNjh8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBtb2Rlcm4lMjBsaXZpbmclMjByb29tJTIwd2FybSUyMHdvb2QlMjBmdXJuaXR1cmV8ZW58MHx8fHwxNzc0ODg3NTIwfDA&ixlib=rb-4.1.0&w=600&h=450&fit=crop",
+      "image_alt": "Living Room collection"
+    },
+    {
+      "name": "Bedroom",
+      "tagline": "Rest in elegance",
+      "image": "https://images.unsplash.com/photo-1587023705100-8094f8d47e86?ixid=M3w4NDcxNjh8MHwxfHNlYXJjaHwxfHxwcmVtaXVtJTIwYmVkcm9vbSUyMHdvb2RlbiUyMGJlZCUyMHdhcm0lMjBsaWdodGluZ3xlbnwwfHx8fDE3NzQ4ODc1MjB8MA&ixlib=rb-4.1.0&w=600&h=450&fit=crop",
+      "image_alt": "Bedroom collection"
+    },
+    {
+      "name": "Dining",
+      "tagline": "Gather and celebrate",
+      "image": "https://images.unsplash.com/photo-1758977404038-8aa1845d6635?ixid=M3w4NDcxNjh8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwZGluaW5nJTIwcm9vbSUyMHNvbGlkJTIwd29vZCUyMHRhYmxlfGVufDB8fHx8MTc3NDg4NzUyMHww&ixlib=rb-4.1.0&w=600&h=450&fit=crop",
+      "image_alt": "Dining collection"
+    }
+  ],
+
+  "brand_tag": "Our Heritage",
+  "brand_title": "Your Story,<br>Our Craft",
+  "brand_text1": "Every Hammernest piece begins as a conversation — your vision, our hands. We source solid hardwoods from sustainable forests and work with artisans who've inherited decades of joinery tradition.",
+  "brand_text2": "From the first sketch to the final polish, each piece is built to last — not just years, but generations. Because great furniture isn't bought. It's entrusted.",
+  "brand_image": "https://images.unsplash.com/photo-1760939858984-5dc76f0ea34a?ixid=M3w4NDcxNjh8MHwxfHNlYXJjaHwxfHxjcmFmdHNtYW4lMjB3b29kd29ya2luZyUyMHdvcmtzaG9wJTIwYXJ0aXNhbiUyMGZ1cm5pdHVyZSUyMG1ha2luZ3xlbnwwfHx8fDE3NzQ4ODc1MjB8MA&ixlib=rb-4.1.0&w=720&h=500&fit=crop",
+  "brand_image_alt": "Hammernest artisan crafting furniture",
+
+  "bestsellers_tag": "Most Loved",
+  "bestsellers_title": "Bestselling Pieces",
+  "home_products": [
+    {
+      "name": "Ashwood Lounge Sofa",
+      "price": "₹1,24,500",
+      "image": "https://images.unsplash.com/photo-1758448755778-90ebf4d0f1e7?ixid=M3w4NDcxNjh8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBwcmVtaXVtJTIwc29mYSUyMGJlaWdlJTIwbGl2aW5nJTIwcm9vbXxlbnwwfHx8fDE3NzQ4ODc1MjB8MA&ixlib=rb-4.1.0&w=400&h=300&fit=crop",
+      "tag": "Bestseller"
+    },
+    {
+      "name": "Oakridge Dining Table",
+      "price": "₹89,900",
+      "image": "https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?w=400&h=300&fit=crop",
+      "tag": "New"
+    },
+    {
+      "name": "Willowmere Bed Frame",
+      "price": "₹1,45,000",
+      "image": "https://images.unsplash.com/photo-1633948393301-d43e3ec0e5cd?ixid=M3w4NDcxNjh8MHwxfHNlYXJjaHwxfHx3b29kZW4lMjBiZWQlMjBmcmFtZSUyMHByZW1pdW0lMjBiZWRyb29tfGVufDB8fHx8MTc3NDg4NzUyMHww&ixlib=rb-4.1.0&w=400&h=300&fit=crop",
+      "tag": ""
+    },
+    {
+      "name": "Cedarholm Bookshelf",
+      "price": "₹67,500",
+      "image": "https://images.unsplash.com/photo-1760822600750-0bc72f1fad9f?ixid=M3w4NDcxNjh8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3b29kZW4lMjBib29rc2hlbGYlMjBzdHlsZWR8ZW58MHx8fHwxNzc0ODg3NTIwfDA&ixlib=rb-4.1.0&w=400&h=300&fit=crop",
+      "tag": "Popular"
+    }
+  ],
+
+  "quote_text": "The dining table Hammernest built for us isn't just furniture — it's where our family gathers every evening. It's the heart of our home.",
+  "quote_author": "Priya & Arjun Malhotra",
+  "quote_meta": "Custom Dining Set, Mumbai",
+  "quote_image": "https://images.unsplash.com/photo-1766393030565-12f744515335?ixid=M3w4NDcxNjh8MHwxfHNlYXJjaHwxfHxjb3p5JTIwZXZlbmluZyUyMGxpdmluZyUyMHJvb20lMjB3YXJtJTIwbGlnaHRpbmclMjBmYW1pbHklMjBob21lfGVufDB8fHx8MTc3NDg4NzUyMHww&ixlib=rb-4.1.0&w=1440&h=600&fit=crop",
+  "quote_image_alt": "Cozy family home",
+
+  "features_tag": "The Hammernest Promise",
+  "features_title": "Why Families Choose Us",
+  "features": [
+    { "icon": "🪵", "title": "Solid Hardwood", "text": "Every piece crafted from sustainably sourced teak, sheesham, or oak — no plywood, no shortcuts." },
+    { "icon": "✋", "title": "Made by Hand", "text": "Our artisans bring decades of joinery expertise to each piece. Visible craft in every detail." },
+    { "icon": "📐", "title": "Custom Designed", "text": "Built to your dimensions, finishes, and style. Your space, your rules — we just make it real." },
+    { "icon": "🛡️", "title": "10-Year Warranty", "text": "We stand behind our work. Solid construction means solid confidence — guaranteed." }
+  ],
+
+  "cta_tag": "Ready to Begin?",
+  "cta_title": "Let's Create Your Perfect Space",
+  "cta_desc": "Whether you have a clear vision or need guidance, we're here. Reach out through your preferred channel — we'd love to hear from you.",
+
+  "instagram_tag": "@hammernest",
+  "instagram_title": "Follow the Story",
+  "instagram_images": [
+    "https://images.unsplash.com/photo-1774005376537-260c4276b33c?ixid=M3w4NDcxNjh8MHwxfHNlYXJjaHwxfHxoYW5kY3JhZnRlZCUyMHdvb2RlbiUyMGNoYWlyJTIwZGV0YWlsfGVufDB8fHx8MTc3NDg4NzUyMHww&ixlib=rb-4.1.0&w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1759722668778-2fad946bbb5f?ixid=M3w4NDcxNjh8MHwxfHNlYXJjaHwxfHxzdHlsZWQlMjBsaXZpbmclMjByb29tJTIwY3VzaGlvbnMlMjB3YXJtfGVufDB8fHx8MTc3NDg4NzUyMHww&ixlib=rb-4.1.0&w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1626977990625-18e01e4cfe7b?ixid=M3w4NDcxNjh8MHwxfHNlYXJjaHwxfHx3b29kd29ya2VyJTIwY2FydmluZyUyMGZ1cm5pdHVyZSUyMGRldGFpbHxlbnwwfHx8fDE3NzQ4ODc1MjB8MA&ixlib=rb-4.1.0&w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1774578342072-c69d386df1e0?ixid=M3w4NDcxNjh8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBiZWRyb29tJTIwbmlnaHRzdGFuZCUyMGxhbXB8ZW58MHx8fHwxNzc0ODg3NTIwfDA&ixlib=rb-4.1.0&w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1758977403424-d7ee0c26814d?ixid=M3w4NDcxNjh8MHwxfHNlYXJjaHwxfHxmYW1pbHklMjBkaW5uZXIlMjB3b29kZW4lMjBkaW5pbmclMjB0YWJsZXxlbnwwfHx8fDE3NzQ4ODc1MjB8MA&ixlib=rb-4.1.0&w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1722411927625-0e478acf502b?ixid=M3w4NDcxNjh8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwd29ya3Nob3AlMjB0b29scyUyMHdvb2QlMjBzaGF2aW5nc3xlbnwwfHx8fDE3NzQ4ODc1MjB8MA&ixlib=rb-4.1.0&w=300&h=300&fit=crop"
+  ],
+
+  "shop_title": "Our Collection",
+  "shop_desc": "Every piece tells a story of fine craftsmanship and lasting quality. Browse our curated selection of handmade furniture.",
+
+  "all_products": [
+    { "id": 1, "name": "Ashwood Lounge Sofa", "price": "₹1,24,500", "numPrice": 124500, "image": "https://images.unsplash.com/photo-1768946131536-39b5f3ec329d?ixid=M3w4NDcxNjh8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBwcmVtaXVtJTIwc29mYSUyMGJlaWdlJTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3NzQ4ODgyMTR8MA&ixlib=rb-4.1.0&w=400&h=300&fit=crop", "tag": "Bestseller", "category": "Living Room", "material": "Teak", "style": "Modern" },
+    { "id": 2, "name": "Oakridge Dining Table", "price": "₹89,900", "numPrice": 89900, "image": "https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?w=400&h=300&fit=crop", "tag": "New", "category": "Dining", "material": "Oak", "style": "Contemporary" },
+    { "id": 3, "name": "Willowmere Bed Frame", "price": "₹1,45,000", "numPrice": 145000, "image": "https://images.unsplash.com/photo-1633948393301-d43e3ec0e5cd?w=400&h=300&fit=crop", "tag": "", "category": "Bedroom", "material": "Sheesham", "style": "Classic" },
+    { "id": 4, "name": "Cedarholm Bookshelf", "price": "₹67,500", "numPrice": 67500, "image": "https://images.unsplash.com/photo-1760822600750-0bc72f1fad9f?w=400&h=300&fit=crop", "tag": "Popular", "category": "Living Room", "material": "Teak", "style": "Modern" },
+    { "id": 5, "name": "Maplewood Coffee Table", "price": "₹42,800", "numPrice": 42800, "image": "https://images.unsplash.com/photo-1767363592711-1cda1502284d?ixid=M3w4NDcxNjh8MHwxfHNlYXJjaHwxfHx3b29kZW4lMjBjb2ZmZWUlMjB0YWJsZSUyMGxpdmluZyUyMHJvb20lMjBtaW5pbWFsfGVufDB8fHx8MTc3NDg4ODIxNHww&ixlib=rb-4.1.0&w=400&h=300&fit=crop", "tag": "", "category": "Living Room", "material": "Oak", "style": "Scandinavian" },
+    { "id": 6, "name": "Birchwood Wardrobe", "price": "₹1,85,000", "numPrice": 185000, "image": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400&h=300&fit=crop", "tag": "New", "category": "Bedroom", "material": "Sheesham", "style": "Classic" },
+    { "id": 7, "name": "Rosewood Dining Chairs (Set of 4)", "price": "₹76,000", "numPrice": 76000, "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=300&fit=crop", "tag": "", "category": "Dining", "material": "Teak", "style": "Contemporary" },
+    { "id": 8, "name": "Pinecrest Console Table", "price": "₹54,200", "numPrice": 54200, "image": "https://images.unsplash.com/photo-1652305459885-b7ae40f0d776?ixid=M3w4NDcxNjh8MHwxfHNlYXJjaHwxfHx3b29kZW4lMjBjb25zb2xlJTIwdGFibGUlMjBlbnRyeXdheSUyMHN0eWxlZHxlbnwwfHx8fDE3NzQ4ODgyMTR8MA&ixlib=rb-4.1.0&w=400&h=300&fit=crop", "tag": "Bestseller", "category": "Living Room", "material": "Oak", "style": "Modern" },
+    { "id": 9, "name": "Elmwood Nightstand Pair", "price": "₹38,500", "numPrice": 38500, "image": "https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=400&h=300&fit=crop", "tag": "", "category": "Bedroom", "material": "Teak", "style": "Scandinavian" },
+    { "id": 10, "name": "Walnut Study Desk", "price": "₹72,000", "numPrice": 72000, "image": "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=400&h=300&fit=crop", "tag": "Popular", "category": "Living Room", "material": "Sheesham", "style": "Modern" },
+    { "id": 11, "name": "Teak Sideboard Cabinet", "price": "₹98,500", "numPrice": 98500, "image": "https://images.unsplash.com/photo-1758977405163-f2595de08dfe?ixid=M3w4NDcxNjh8MHwxfHNlYXJjaHwxfHx3b29kZW4lMjBzaWRlYm9hcmQlMjBjYWJpbmV0JTIwZGluaW5nJTIwcm9vbXxlbnwwfHx8fDE3NzQ4ODgyMTR8MA&ixlib=rb-4.1.0&w=400&h=300&fit=crop", "tag": "", "category": "Dining", "material": "Teak", "style": "Classic" },
+    { "id": 12, "name": "Heritage Rocking Chair", "price": "₹48,900", "numPrice": 48900, "image": "https://images.unsplash.com/photo-1755426225472-c91c439170a2?ixid=M3w4NDcxNjh8MHwxfHNlYXJjaHwxfHx3b29kZW4lMjByb2NraW5nJTIwY2hhaXIlMjB0cmFkaXRpb25hbCUyMGhhbmRjcmFmdGVkfGVufDB8fHx8MTc3NDg4ODIxNXww&ixlib=rb-4.1.0&w=400&h=300&fit=crop", "tag": "New", "category": "Living Room", "material": "Oak", "style": "Classic" }
+  ],
+
+  "contact_tag": "We'd Love to Hear From You",
+  "contact_title": "Let's Start a Conversation",
+  "contact_desc": "Whether you're dreaming of a custom dining table or need help choosing the right sofa — we're here for every step.",
+  "contact_hero_image": "https://images.unsplash.com/photo-1760939858984-5dc76f0ea34a?w=1440&h=500&fit=crop",
+
+  "workshop_tag": "Our Workshop",
+  "workshop_title": "Visit Us in Jodhpur",
+  "workshop_desc": "Step inside our workshop where every Hammernest piece comes to life. See the wood, feel the finishes, and meet the artisans behind your furniture. Walk-ins welcome — or schedule ahead for a guided tour.",
+  "workshop_address": "Workshop 14, Timber Lane, Jodhpur, Rajasthan 342001",
+  "workshop_hours": "Mon – Sat: 10:00 AM – 7:00 PM",
+  "workshop_image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=700&h=350&fit=crop",
+  "workshop_image_alt": "Jodhpur, Rajasthan"
+}

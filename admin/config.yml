@@ -1,0 +1,124 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: editorial_workflow
+
+media_folder: "assets"
+public_folder: "/assets"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "content/home.json"
+        fields:
+          # ===== SEO =====
+          - { label: "Page Title (SEO)", name: "meta_title", widget: "string" }
+          - { label: "Meta Description (SEO)", name: "meta_description", widget: "text" }
+
+          # ===== HERO SECTION =====
+          - { label: "Hero Tag", name: "hero_tag", widget: "string" }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Description", name: "hero_desc", widget: "text" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Hero Image Alt Text", name: "hero_image_alt", widget: "string" }
+
+          # ===== COLLECTIONS SECTION =====
+          - { label: "Collections Tag", name: "collections_tag", widget: "string" }
+          - { label: "Collections Title", name: "collections_title", widget: "string" }
+          - label: "Collections"
+            name: "collections"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image Alt Text", name: "image_alt", widget: "string" }
+
+          # ===== BRAND STORY SECTION =====
+          - { label: "Brand Tag", name: "brand_tag", widget: "string" }
+          - { label: "Brand Title (supports <br> for line break)", name: "brand_title", widget: "string" }
+          - { label: "Brand Text 1", name: "brand_text1", widget: "text" }
+          - { label: "Brand Text 2", name: "brand_text2", widget: "text" }
+          - { label: "Brand Image", name: "brand_image", widget: "image" }
+          - { label: "Brand Image Alt Text", name: "brand_image_alt", widget: "string" }
+
+          # ===== BESTSELLERS SECTION =====
+          - { label: "Bestsellers Tag", name: "bestsellers_tag", widget: "string" }
+          - { label: "Bestsellers Title", name: "bestsellers_title", widget: "string" }
+          - label: "Home Products (Bestsellers)"
+            name: "home_products"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Tag (e.g. Bestseller, New, Popular — leave empty for none)", name: "tag", widget: "string", required: false }
+
+          # ===== TESTIMONIAL QUOTE =====
+          - { label: "Quote Text", name: "quote_text", widget: "text" }
+          - { label: "Quote Author", name: "quote_author", widget: "string" }
+          - { label: "Quote Meta (e.g. Custom Dining Set, Mumbai)", name: "quote_meta", widget: "string" }
+          - { label: "Quote Background Image", name: "quote_image", widget: "image" }
+          - { label: "Quote Image Alt Text", name: "quote_image_alt", widget: "string" }
+
+          # ===== FEATURES SECTION =====
+          - { label: "Features Tag", name: "features_tag", widget: "string" }
+          - { label: "Features Title", name: "features_title", widget: "string" }
+          - label: "Features"
+            name: "features"
+            widget: "list"
+            fields:
+              - { label: "Icon (emoji)", name: "icon", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+
+          # ===== CTA SECTION =====
+          - { label: "CTA Tag", name: "cta_tag", widget: "string" }
+          - { label: "CTA Title", name: "cta_title", widget: "string" }
+          - { label: "CTA Description", name: "cta_desc", widget: "text" }
+
+          # ===== INSTAGRAM SECTION =====
+          - { label: "Instagram Tag", name: "instagram_tag", widget: "string" }
+          - { label: "Instagram Title", name: "instagram_title", widget: "string" }
+          - label: "Instagram Images"
+            name: "instagram_images"
+            widget: "list"
+            field: { label: "Image URL", name: "url", widget: "image" }
+
+          # ===== SHOP PAGE =====
+          - { label: "Shop Title", name: "shop_title", widget: "string" }
+          - { label: "Shop Description", name: "shop_desc", widget: "text" }
+
+          # ===== ALL PRODUCTS (Shop) =====
+          - label: "All Products"
+            name: "all_products"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number", value_type: "int" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Display Price", name: "price", widget: "string" }
+              - { label: "Numeric Price (for filtering)", name: "numPrice", widget: "number", value_type: "int" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Tag (Bestseller, New, Popular — leave empty for none)", name: "tag", widget: "string", required: false }
+              - { label: "Category", name: "category", widget: "select", options: ["Living Room", "Bedroom", "Dining"] }
+              - { label: "Material", name: "material", widget: "select", options: ["Teak", "Oak", "Sheesham"] }
+              - { label: "Style", name: "style", widget: "select", options: ["Modern", "Classic", "Contemporary", "Scandinavian"] }
+
+          # ===== CONTACT PAGE =====
+          - { label: "Contact Tag", name: "contact_tag", widget: "string" }
+          - { label: "Contact Title", name: "contact_title", widget: "string" }
+          - { label: "Contact Description", name: "contact_desc", widget: "text" }
+          - { label: "Contact Hero Image", name: "contact_hero_image", widget: "image" }
+
+          # ===== WORKSHOP SECTION =====
+          - { label: "Workshop Tag", name: "workshop_tag", widget: "string" }
+          - { label: "Workshop Title", name: "workshop_title", widget: "string" }
+          - { label: "Workshop Description", name: "workshop_desc", widget: "text" }
+          - { label: "Workshop Address", name: "workshop_address", widget: "string" }
+          - { label: "Workshop Hours", name: "workshop_hours", widget: "string" }
+          - { label: "Workshop Image", name: "workshop_image", widget: "image" }
+          - { label: "Workshop Image Alt Text", name: "workshop_image_alt", widget: "string" }
